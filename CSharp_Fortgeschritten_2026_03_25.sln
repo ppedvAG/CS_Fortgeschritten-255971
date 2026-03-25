@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Dele
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events", "Events\Events.csproj", "{7B6D199B-33BC-41D0-8615-F0E39F9DB1E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialisierung", "Serialisierung\Serialisierung.csproj", "{9221EDAA-5B64-415C-B05C-2412C4BA56FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7B6D199B-33BC-41D0-8615-F0E39F9DB1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B6D199B-33BC-41D0-8615-F0E39F9DB1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B6D199B-33BC-41D0-8615-F0E39F9DB1E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9221EDAA-5B64-415C-B05C-2412C4BA56FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9221EDAA-5B64-415C-B05C-2412C4BA56FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9221EDAA-5B64-415C-B05C-2412C4BA56FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9221EDAA-5B64-415C-B05C-2412C4BA56FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events", "Events\Events.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialisierung", "Serialisierung\Serialisierung.csproj", "{9221EDAA-5B64-415C-B05C-2412C4BA56FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multitasking", "Multitasking\Multitasking.csproj", "{B6FEC4DC-6B4E-46A5-868F-3A082184F16A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{9221EDAA-5B64-415C-B05C-2412C4BA56FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9221EDAA-5B64-415C-B05C-2412C4BA56FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9221EDAA-5B64-415C-B05C-2412C4BA56FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6FEC4DC-6B4E-46A5-868F-3A082184F16A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6FEC4DC-6B4E-46A5-868F-3A082184F16A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6FEC4DC-6B4E-46A5-868F-3A082184F16A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6FEC4DC-6B4E-46A5-868F-3A082184F16A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

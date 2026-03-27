@@ -196,6 +196,49 @@ internal class Program
 		Dictionary<FahrzeugMarke, double> dict2 = fahrzeuge
 			.GroupBy(e => e.Marke)
 			.ToDictionary(k => k.Key, v => v.Average(e => e.MaxV));
+
+		var lookup = fahrzeuge.GroupBy(e => e.Marke).ToLookup(e => e.Key);
+		var x = lookup[FahrzeugMarke.BMW];
+
+		//Erweiterungsmethoden
+		int zahl = 214;
+		Console.WriteLine(zahl.Quersumme());
+
+		fahrzeuge.Shuffle();
+
+		fahrzeuge.Between(100, 200, e => e.MaxV);
+
+		Console.WriteLine(fahrzeuge);
+	}
+}
+
+public static class ExtensionMethods
+{
+	public static int Quersumme(this int x)
+	{
+		//int summe = 0;
+		//string zahlAlsString = x.ToString();
+		//for (int i = 0; i < zahlAlsString.Length; i++)
+		//{
+		//	summe += (int) char.GetNumericValue(zahlAlsString[i]);
+		//}
+		//return summe;
+
+		return (int) x.ToString().Sum(char.GetNumericValue);
+	}
+
+	public static IEnumerable<T> Shuffle<T>(this IEnumerable<T> x)
+	{
+		return x.OrderBy(e => Random.Shared.Next());
+	}
+
+	public static IEnumerable<TList> Between<TList>(this IEnumerable<TList> x, int min, int max, Func<TList, int> fieldSelector)
+	{
+		foreach (TList element in x)
+		{
+			if (fieldSelector(element) > min && fieldSelector(element) < max)
+				yield return element;
+		}
 	}
 }
 
